@@ -448,19 +448,35 @@ a {
   display: flex;
   min-width: 0;
   flex: 2;
-  border-left: 1px solid var(--line);
+}
+
+.tl-shared-wrapper .tl-item {
+  flex: 1;
 }
 
 .tl-shared-time-badge {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 132px;
+  left: 14px;
+  right: 14px;
+  z-index: 2;
+  padding: 7px 0;
+  border-radius: 999px;
+  color: #246fc2;
+  background: #dfeff9;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .tl-time-spacer {
-  display: none;
+  display: block;
+  height: 51px;
 }
 
 .tl-time-mobile {
-  display: block;
+  display: none;
 }
 
 .timeline-track > .tl-item:last-child {
