@@ -266,7 +266,6 @@ a {
   font-size: clamp(20px, 2.5vw, 28px);
   font-weight: 900;
   line-height: 1.7;
-  background: var(--mist);
 }
 
 .about-sub {
