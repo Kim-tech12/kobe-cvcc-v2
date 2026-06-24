@@ -275,6 +275,9 @@ a {
   font-size: clamp(18px, 2vw, 24px);
   font-weight: 700;
 }
+.fit {
+  background: var(--mist);
+}
 
 .fit-grid {
   display: grid;
