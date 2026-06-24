@@ -359,6 +359,7 @@ h2,
 
 .programs {
   padding: clamp(76px, 9vw, 112px) 0;
+  background: var(--mist);
 }
 
 .section-heading {
