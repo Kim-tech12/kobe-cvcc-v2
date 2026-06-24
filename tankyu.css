@@ -57,13 +57,6 @@ a {
   gap: 12px;
 }
 
-.btn-nav-secondary {
-  border: 1px solid #071f49;
-  color: #071f49;
-  background: #fff;
-  box-shadow: none;
-}
-
 .nav-logo {
   color: var(--navy);
   font-size: 28px;
@@ -97,6 +90,13 @@ a {
   padding: 11px 22px;
   border-radius: 999px;
   font-size: 13px;
+}
+
+.btn-nav-secondary {
+  border: 1px solid #071f49;
+  color: #071f49;
+  background: #fff;
+  box-shadow: none;
 }
 
 .btn-nav:hover,
