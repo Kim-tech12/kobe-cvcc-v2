@@ -51,6 +51,19 @@ a {
   backdrop-filter: blur(16px);
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-nav-secondary {
+  border: 1px solid #071f49;
+  color: #071f49;
+  background: #fff;
+  box-shadow: none;
+}
+
 .nav-logo {
   color: var(--navy);
   font-size: 28px;
