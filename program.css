@@ -289,7 +289,7 @@ a {
   padding: 32px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: var(--mist);
+  background: #fff;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
