@@ -51,7 +51,11 @@ a {
   backdrop-filter: blur(16px);
 }
 
-.nav-brand {
+.nav-brand,
+.nav-brand *,
+.nav-brand:visited,
+.nav-brand:hover,
+.nav-brand:active {
   color: inherit;
   text-decoration: none;
 }
