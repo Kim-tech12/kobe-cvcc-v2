@@ -658,6 +658,27 @@ a {
   font-size: 14px;
 }
 
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.btn-cta-secondary {
+  color: var(--navy);
+  background: #fff;
+  border: 1px solid var(--navy);
+  box-shadow: none;
+}
+
+.btn-cta-secondary:hover {
+  color: var(--navy);
+  background: var(--mist);
+  box-shadow: none;
+}
+
 .contact {
   margin-top: 20px;
   color: var(--muted);
