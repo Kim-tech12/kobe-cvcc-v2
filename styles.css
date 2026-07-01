@@ -711,43 +711,62 @@ h2,
 }
 
 .kobekatsu {
-  position: relative;
-  padding: clamp(86px, 10vw, 128px) 0;
+  padding: clamp(78px, 9vw, 112px) 0;
   background: #fff;
-}
-
-.kobekatsu::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: min(900px, calc(100% - 40px));
-  height: 1px;
-  transform: translateX(-50%);
-  background: var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .kobekatsu .section-inner {
+  width: min(1000px, calc(100% - 40px));
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
 }
 
+.kobekatsu .section-heading {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: end;
+  max-width: 100%;
+  margin: 0 0 44px;
+  text-align: left;
+}
+
+.kobekatsu .section-label {
+  text-align: left;
+}
+
+.kobekatsu .section-title {
+  text-align: left;
+  font-size: clamp(30px, 3.7vw, 44px);
+  line-height: 1.45;
+}
+
+.kobekatsu .section-heading p {
+  margin-top: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2;
+}
+
 .kobekatsu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-  max-width: 900px;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .kobekatsu-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 300px;
-  padding: 28px;
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  min-height: 148px;
+  padding: 24px 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
   color: inherit;
@@ -757,7 +776,7 @@ h2,
 }
 
 .kobekatsu-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: #c7ccd4;
   box-shadow: var(--shadow);
 }
@@ -771,11 +790,12 @@ h2,
 }
 
 .kobekatsu-num {
+  grid-row: 1 / 4;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   color: #fff;
   background: var(--navy-gradient);
@@ -784,7 +804,7 @@ h2,
 }
 
 .kobekatsu-owner {
-  margin: 18px 0 8px;
+  margin: 0 0 6px;
   color: #8a93a3;
   font-size: 11px;
   font-weight: 900;
@@ -795,29 +815,34 @@ h2,
 .kobekatsu-card h3 {
   margin: 0;
   color: var(--blue-deep);
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .kobekatsu-card p:last-child {
-  margin: 14px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .kobekatsu-card::after {
   content: "詳しく見る";
   display: inline-flex;
-  margin-top: auto;
-  padding-top: 24px;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   color: var(--blue-deep);
   font-size: 12px;
   font-weight: 900;
+  background: #fff;
 }
 
 .kobekatsu-card:last-child {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
