@@ -512,7 +512,7 @@ h2,
 }
 
 .news {
-  background: #fff;
+  background: var(--mist);
 }
 
 .news-head {
@@ -524,7 +524,10 @@ h2,
 }
 
 .news-list {
-  border-top: 1px solid var(--line);
+  padding: 0 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
 }
 
 .news-row {
