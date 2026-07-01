@@ -711,15 +711,27 @@ h2,
 }
 
 .kobekatsu {
-  padding: clamp(76px, 9vw, 112px) 0;
+  position: relative;
+  padding: clamp(86px, 10vw, 128px) 0;
   background: #fff;
 }
 
+.kobekatsu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(900px, calc(100% - 40px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--line);
+}
+
 .kobekatsu .section-inner {
-  padding: clamp(56px, 7vw, 82px) clamp(28px, 4vw, 48px);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--mist);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .kobekatsu-grid {
