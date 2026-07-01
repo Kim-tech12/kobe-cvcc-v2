@@ -800,3 +800,42 @@ h2,
   text-decoration: none;
 }
 
+#kobekatsu .kobekatsu-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 18px !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+#kobekatsu .kobekatsu-card {
+  display: block !important;
+  min-height: 230px !important;
+  padding: 28px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  background: #fff !important;
+}
+
+#kobekatsu .kobekatsu-card *,
+#kobekatsu .kobekatsu-card:hover,
+#kobekatsu .kobekatsu-card:visited,
+#kobekatsu .kobekatsu-card:active {
+  text-decoration: none !important;
+}
+
+#kobekatsu .kobekatsu-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  background: var(--navy-gradient) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+}
+
