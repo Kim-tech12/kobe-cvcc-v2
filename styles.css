@@ -710,8 +710,15 @@ h2,
   }
 }
 
-  .kobekatsu {
+.kobekatsu {
   padding: clamp(76px, 9vw, 112px) 0;
+  background: #fff;
+}
+
+.kobekatsu .section-inner {
+  padding: clamp(56px, 7vw, 82px) clamp(28px, 4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
   background: var(--mist);
 }
 
@@ -725,8 +732,9 @@ h2,
 
 .kobekatsu-card {
   position: relative;
-  display: block;
-  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -736,68 +744,26 @@ h2,
   transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
 }
 
-.kobekatsu-card:hover {
-  transform: translateY(-5px);
-  border-color: #c7ccd4;
-  box-shadow: var(--shadow);
-}
-
-.kobekatsu-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  color: #fff;
-  background: var(--navy-gradient);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.kobekatsu-owner {
-  margin: 18px 0 8px;
-  color: #8a93a3;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.kobekatsu-card h3 {
-  margin: 0;
-  color: var(--blue-deep);
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 1.55;
-}
-
-.kobekatsu-card p:last-child {
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.9;
-}
-
 .kobekatsu-card::after {
   content: "詳しく見る";
   display: inline-flex;
-  margin-top: 20px;
+  margin-top: auto;
+  padding-top: 24px;
   color: var(--blue-deep);
   font-size: 12px;
   font-weight: 900;
 }
-.kobekatsu-card:last-child {
-  grid-column: 1 / -1;
+  
+　.kobekatsu-card:last-child {
+    grid-column: 1 / -1;
 }
-
-.kobekatsu-card,
-.kobekatsu-card *,
-.kobekatsu-card:visited,
-.kobekatsu-card:hover,
-.kobekatsu-card:active {
-  text-decoration: none;
+  
+  .kobekatsu-card,
+  .kobekatsu-card *,
+  .kobekatsu-card:visited,
+  .kobekatsu-card:hover,
+  .kobekatsu-card:active {
+    text-decoration: none;
 }
 
 #kobekatsu .kobekatsu-grid {
